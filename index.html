@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>College Adimssion Application</title>
+</head>
+<body>
+    <h1>🎓College Admission Application</h1>
+<br>
+<form action="sample/">
+    <fieldset>
+        <legend><b>Personal Details</b></legend> <br>
+            <label for="full_name"><b>Full Name</b></label> <br>
+            <input type="text" id="full_name" name="Full Name">
+        <br> <br>
+            <label for="gender"><b>Gender</b></label><br>
+            <input type="radio" id="male" name="gender">
+            <label for="gender">Male</label> <br>
+            <input type="radio" id="female" name="gender">
+            <label for="gender">Female</label><br>
+            <input type="radio" id="other" name="gender">
+            <label for="gender">Others</label>
+        <br> <br>
+            <label for="dob"><b>Date Of Birth</b></label> <br>
+            <input type="date" id="dob" name="DOB">
+        <br> <br>
+            <label for="email"><b>E-Mail</b></label> <br>
+            <input type="email" id="email" name="e-mail">
+        <br><br>
+            <label for="ph-no"><b>Phone Number</b></label> <br>
+            <input type="number" id="ph-no" name="Ph-No">
+        <br> <br>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend><b>Academic Details</b></legend> <br>
+        <label for="exams-passed"><b>Examinations Passed:</b></label> <br>
+        <input type="checkbox" id="10th" name="exams-passed">
+        <label for="exams-passed">X</label><br>
+        <input type="checkbox" id="12th" name="exams-passed">
+        <label for="exams-passed">XII</label><br>
+        <input type="checkbox" id="Diploma" name="exams-passed"> 
+        <label for="exams-passed">Diploma (If Applicable)</label>
+        <br><hr>
+        <label for="12th-percent"><b>Standard XII Overall Percentage</b></label><br>
+        <input type="number" id="12th-percent" name="12th Percentage">
+        <br><br>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend><b>Course Selection</b></legend> <br>
+        <label for="stream"><b>Preferred Stream:</b></label> <br>
+        <select name="pre-stream" id="stream">
+            <option value="Engineering">Engineering</option>
+            <option value="Science">Arts & Science</option>
+            <option value="medical">Medical</option>
+        </select>
+        <br> <br>
+        <label for="clg"><b>Preferred College</b></label> 
+        <br><hr>
+        <label for="engg"><b>Engineering Colleges:</b></label><br>
+                <select name="enggclg" id="engg">
+                    <option value="psg">PSG Tech</option>
+                    <option value="psg-itech">PSG iTech</option>
+                    <option value="cit">CIT</option>
+                    <option value="gct">GCT</option>
+                    <option value="kumaraguru">Kumaraguru College of Technology</option>
+                    <option value="kit">KIT</option>
+                    <option value="kpr">KPR Institution of Technology</option>
+                    <option value="kct">Karpagam College of Technology</option>
+                    <option value="eashwar">Eashwar College of Engineering</option>
+                </select>
+        <br><br>
+        <label for="sci"><b>Arts & Science Colleges:</b></label> <br>
+                <select name="artsclg" id="arts">
+                    <option value="psgcas">PSG CAS</option>
+                    <option value="grd">GRD CAS</option>
+                    <option value="krishna">Sri Krishna CAS</option>
+                    <option value="krishna adhithya">Krishna Adhithya CAS</option>
+                    <option value="nehru">Nehru CAS</option>
+                </select>
+        <br><br>
+        <label for="med"><b>Medical Colleges: </b></label><br>
+                <select name="medclg" id="med">
+                    <option value="psgmed">PSG Medical College</option>
+                    <option value="kmch">KMCH Medical College</option>
+                    <option value="ramakrishna">Ramakrishna Medical College</option>
+                </select>
+                <br><br>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend><b>Other Details</b></legend>
+        <label for="comments">Anything you need to specify:</label> <br>
+        <textarea name="" id="comments" ></textarea>
+        <br>
+        <label for="internet"><b>Your Internet Speed (for online learning):</b></label>
+        <input type="range" id="internet" name="internet-speed" min="1" max="1000" step="10">
+        <br><br>
+        <label for="terms"><b>Terms and Conditions</b></label> <br>
+        <input type="checkbox" id="documents" name="terms"> 
+        <label for="terms">I've uploaded all the required documents</label> <br>
+        <input type="checkbox" id="cond" name="terms">
+        <label for="terms">I agree to the mentioned terms and conditions</label>
+    </fieldset>
+    <button type="submit">Submit Application</button> 
+    <br><br>
+    <button type="reset">Reset</button>
+</form>
+</body>
+</html>
